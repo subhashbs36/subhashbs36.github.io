@@ -1,0 +1,79 @@
+import { Img, Button, Text, Heading } from "../../components";
+import HomeColumnview from "../../components/HomeColumnview";
+import UserProfile4 from "../../components/UserProfile4";
+import React, { Suspense } from "react";
+
+export default function Home1RowTen() {
+  return (
+    <div className="flex items-center px-7 md:flex-col sm:px-5">
+      <div className="flex-1 md:self-stretch">
+        <div className="flex flex-col gap-[22px]">
+          <div className="ml-[152px] mr-[100px] flex items-center justify-between gap-5 md:mx-0 sm:flex-col">
+            <div className="flex flex-wrap">
+              <Heading
+                size="headinglg"
+                as="h2"
+                className="text-[32px] font-bold text-purple-200 md:text-[30px] sm:text-[28px]"
+              >
+                #
+              </Heading>
+              <Heading
+                size="headinglg"
+                as="h3"
+                className="text-[32px] font-bold text-white-a700 md:text-[30px] sm:text-[28px]"
+              >
+                about-me
+              </Heading>
+            </div>
+            <div className="h-px flex-1 bg-purple-200 sm:self-stretch" />
+          </div>
+          <div className="flex items-start md:flex-col">
+            <div className="mt-36 flex w-[12%] flex-col gap-5 md:w-full md:flex-row sm:flex-col">
+              <Suspense fallback={<div>Loading feed...</div>}>
+                {[...Array(5)].map((d, index) => (
+                  <UserProfile4 key={"listview" + index} />
+                ))}
+              </Suspense>
+            </div>
+            <div className="flex flex-1 flex-col items-center gap-1.5 self-center px-[54px] md:self-stretch md:px-5">
+              <Text as="p" className="w-[98%] text-[16px] font-normal leading-[26px] text-blue_gray-200 md:w-full">
+                <>
+                  👋 Hi, I’m a Backend Developer with a strong foundation in AWS, Django, and cloud technologies,
+                  currently pursuing an M.S. in Computer Engineering at UC Riverside. With over two years of hands-on
+                  experience, I’ve contributed to projects that span AI, ML, and innovative cloud solutions, including
+                  enhancing sensor accuracy at Artpark and developing cutting-edge systems at Drozone.
+                  <br />
+                  <br />
+                  💡 My expertise extends beyond traditional software development. I’m passionate about the intersection
+                  of AI, ML, and robotics, constantly exploring new ways to harness their transformative potential. I
+                  bring a problem-solving mindset and a genuine enthusiasm for tackling complex challenges in
+                  technology.
+                </>
+              </Text>
+              <div className="flex gap-[72px] self-stretch">
+                <Button className="flex h-[36px] min-w-[160px] flex-row items-center justify-center border border-solid border-purple-200 pl-[15px] pr-[29px] text-center text-[16px] font-medium text-white-a700 sm:pr-5">
+                  Read more -&gt;
+                </Button>
+                <Button className="flex h-[36px] min-w-[148px] flex-row items-center justify-center border border-solid border-purple-200 pl-[15px] pr-[33px] text-center text-[16px] font-medium text-white-a700 sm:pr-5">
+                  Resume -&gt;{" "}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="relative h-[508px] w-[40%] px-[54px] md:w-full md:px-5">
+        <Img
+          src="images/img_image_506x338.png"
+          alt="Image"
+          className="absolute bottom-0 left-[10%] top-0 my-auto h-[506px] w-[78%] object-contain"
+        />
+        <div className="absolute bottom-px left-[12%] m-auto flex w-[78%] flex-col gap-[68px] md:relative">
+          <HomeColumnview className="mr-[242px] md:mr-0" />
+          <div className="h-px w-[270px] bg-purple-200" />
+          <HomeColumnview className="mb-[172px] ml-[222px] md:mb-0 md:ml-0" />
+        </div>
+      </div>
+    </div>
+  );
+}
