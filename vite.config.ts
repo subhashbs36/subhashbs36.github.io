@@ -9,6 +9,6 @@ export default defineConfig({
   build: {
     outDir: "build",
   },
+  base: "/",
   plugins: [tsconfigPaths(), react()],
-  base: "/vite-react-deploy/",
 });

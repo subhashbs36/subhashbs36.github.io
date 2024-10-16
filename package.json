@@ -1,7 +1,7 @@
 {
-  "name": "home-5",
+  "name": "subhash",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@tailwindcss/forms": "^0.5.7",
     "@testing-library/jest-dom": "^5.15.1",
