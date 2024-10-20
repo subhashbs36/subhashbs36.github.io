@@ -24,7 +24,7 @@ jobs:
         run: npm run build
 
       - name: List build directory contents
-        run: ls -la ./dist
+        run: ls -la .
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
