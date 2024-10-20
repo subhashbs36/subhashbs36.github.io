@@ -10,4 +10,5 @@ export default defineConfig({
     outDir: "build",
   },
   plugins: [tsconfigPaths(), react()],
+  base: "/subhashbs36.github.io/",
 });
