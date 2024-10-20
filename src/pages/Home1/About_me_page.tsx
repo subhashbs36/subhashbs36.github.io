@@ -16,7 +16,7 @@ export default function About_me() {
     <div className="flex items-center px-7 md:flex-col sm:px-5" id="about_me">
       <div className="flex-1 md:self-stretch">
         <div className="flex flex-col gap-[22px]">
-          <div className="ml-[152px] mr-[100px] flex items-center justify-between gap-5 md:mx-0 sm:flex-col">
+          <div className="ml-[100px] mr-[100px] flex items-center justify-between gap-5 md:mx-0 sm:flex-col">
             <div className="flex flex-wrap">
               <Heading
                 size="headinglg"
@@ -30,19 +30,12 @@ export default function About_me() {
                 as="h3"
                 className="text-[32px] font-bold text-white-a700 md:text-[30px] sm:text-[28px]"
               >
-                about-me
+                About-me
               </Heading>
             </div>
             <div className="h-px flex-1 bg-purple-200 sm:self-stretch" />
           </div>
           <div className="flex items-start md:flex-col">
-            <div className="mt-36 flex w-[12%] flex-col gap-5 md:w-full md:flex-row sm:flex-col">
-              <Suspense fallback={<div>Loading feed...</div>}>
-                {[...Array(5)].map((d, index) => (
-                  <UserProfile4 key={"listview" + index} />
-                ))}
-              </Suspense>
-            </div>
             <div className="flex flex-1 flex-col items-center gap-1.5 self-center px-[54px] md:self-stretch md:px-5">
               <Text as="p" className="w-[98%] text-[16px] font-normal leading-[26px] text-blue_gray-200 md:w-full">
                 <>
@@ -80,13 +73,8 @@ export default function About_me() {
         <Img
           src="images/img_image_506x338.png"
           alt="Image"
-          className="absolute bottom-0 left-[10%] top-0 my-auto h-[506px] w-[78%] object-contain"
+          className="absolute bottom-0 left-[10%] top-10 my-auto h-[506px] w-[75%] object-contain"
         />
-        <div className="absolute bottom-px left-[10%] m-auto flex w-[78%] flex-col gap-[68px] md:relative">
-          <HomeColumnview className="mb-[172px] ml-[80%] md:mb-0 md:ml-0 mt-[120]" />
-          <HomeColumnview className="mr-[20%] md:mr-0" />
-          <div className="h-px w-[270px] bg-purple-200" />
-        </div>
       </div>
     </div>
   );

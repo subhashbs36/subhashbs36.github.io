@@ -44,7 +44,6 @@ export default function ComplexGridLayout({ ...props }: Props) {
           <div className="h-[4px] w-[4px] rounded-sm bg-blue_gray-200" />
         </div>
       </div>
-      <div className="mb-3.5 h-[86px] w-[86px] border border-solid border-blue_gray-200" />
     </div>
   );
 }

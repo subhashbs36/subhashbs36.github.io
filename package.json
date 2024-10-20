@@ -1,5 +1,5 @@
 {
-  "name": "home-5",
+  "name": "subhashbs36.github.io",
   "version": "0.1.0",
   "homepage": "https://subhashbs36.github.io/react-gh-pages",
   "private": true,
@@ -17,12 +17,15 @@
     "react-router-hash-link": "^2.4.3",
     "react-scroll": "^1.9.0"
   },
+  "homepage": "https://subhashbs36.github.io/subhashbs36.github.io",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [

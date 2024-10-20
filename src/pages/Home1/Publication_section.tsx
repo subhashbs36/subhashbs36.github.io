@@ -8,7 +8,7 @@ const data = [
     subtitle: "IEEE",
     Github: "https://ieeexplore.ieee.org/document/10467949",
     Live: "Blog >=",
-    imageSrc: "public/gifs/bowling_action.gif", // Add custom image source here
+    imageSrc: "gifs/bowling_action.gif", // Add custom image source here
     liveTitle: "Feature coming soon", // Add title for Live button
   },
   {
@@ -16,7 +16,7 @@ const data = [
     subtitle: "Springer[Chapter]",
     Github: "https://link.springer.com/chapter/10.1007/978-981-99-8684-2_14",   
     Live: "Blog >=",
-    imageSrc: "public/images/subhash_springer.png", // Add custom image source here
+    imageSrc: "images/subhash_springer.png", // Add custom image source here
     liveTitle: "Feature coming soon", // Add title for Live button
   },
   {
@@ -24,7 +24,7 @@ const data = [
     subtitle: "IEEE",
     Github: "https://github.com/subhashbs36/Autonomous-Drone-Path-Optimization-for-Pomegranate-Tree-Pesticide-Spraying",
     Live: "Blog >=",
-    imageSrc: "public/images/CCTV-from-Liverpool.jpg", // Add custom image source here
+    imageSrc: "images/CCTV-from-Liverpool.jpg", // Add custom image source here
     liveTitle: "Feature coming soon", // Add title for Live button
   },
 ];
@@ -62,7 +62,6 @@ export default function Publications() {
         </div>
 
         {/* Add margin-right to shift the left elements slightly */}
-        <div className="mt-[130px] h-[154px] w-[6%] border border-solid border-blue_gray-200 md:mt-0 ml-[-7.7%] "  />
       </div>
       <div className="flex-grow" />
     </div>

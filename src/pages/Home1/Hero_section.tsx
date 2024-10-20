@@ -27,7 +27,6 @@ export default function Hero_section() {
             </div>
           </div>
         </div>
-        <div className="mt-7 h-[90px] w-[6%] border border-solid border-blue_gray-200" />
       </div>
     </div>
   );

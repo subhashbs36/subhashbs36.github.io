@@ -15,7 +15,7 @@ export default function Home1Page() {
   return (
     <>
       <Helmet>
-        <title>Subhash Profile</title>
+        <title>Subhash</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className="w-full bg-blue_gray-900">
@@ -23,7 +23,7 @@ export default function Home1Page() {
           <div className="flex flex-col gap-[98px] md:gap-[73px] sm:gap-[49px]">
             <div className="relative mr-5 h-[546px] content-center md:mr-0 md:h-auto">
               <div className="mx-auto flex flex-1 items-start justify-center md:flex-col">
-                <div className="relative z-[3] mt-[160px] flex flex-col gap-2 md:px-5">
+                {/* <div className="relative mt-[0px] flex flex-col gap-3 md:px-5">
                   <a href="https://github.com/subhashbs36" target="_blank" rel="noreferrer">
                       <Img src="images/img_user.svg" alt="User" className="h-[32px] w-[32px] hover:opacity-75" />
                     </a>
@@ -33,7 +33,7 @@ export default function Home1Page() {
                       <a href="mailto:subhashbs36@gmail.com" target="_blank" rel="noreferrer">
                       <Img src="images/img_lock.svg" alt="Lock" className="h-[32px] w-[32px] hover:opacity-75" />
                       </a>
-                </div>
+                </div> */}
                 <div className="relative ml-[-26px] flex flex-1 flex-col items-center self-center md:ml-0 md:self-stretch md:px-5">
                   <div className="relative z-[1] flex flex-col items-start self-stretch">
                     <Header />
@@ -83,36 +83,22 @@ export default function Home1Page() {
                                 alt="Image"
                                 className="mx-auto h-[386px] w-full flex-1 object-cover"
                               />
-                              <div className="absolute bottom-[15%] right-[15px] m-auto flex w-[18%] flex-col gap-4 md:flex-row sm:relative sm:flex-col">
-                                <Suspense fallback={<div>Loading feed...</div>}>
-                                  {[...Array(5)].map((d, index) => (
-                                    <GrayViewContainer key={"dots" + index} />
-                                  ))}
-                                </Suspense>
-                              </div>
+
                             </div>
                           </div>
                         </div>
                         <div className="mr-9 flex w-[42%] items-center gap-2.5 border border-solid border-blue_gray-200 bg-blue_gray-900 p-2 md:mr-0 md:w-full">
                           <div className="h-[16px] w-[16px] border border-solid border-purple-200 bg-purple-200" />
                           <Text as="p" className="text-[16px] font-medium text-blue_gray-200">
-                            <span className="text-blue_gray-200">Looking forward to&nbsp;</span>
-                            <span className="text-white-a700">connecting!</span>
+                            <span className="text-blue_gray-200">Lifelong </span>
+                            <span className="text-purple-200">learner, innovator, </span>
+                            <span className="text-blue_gray-200">and night-time</span>
+                            <span className="text-purple-200"> debugger.</span>
                           </Text>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="absolute left-0 right-0 top-[16%] z-[4] mx-1 my-auto flex flex-1 flex-col md:mx-0">
-                <Img src="images/img_thumbs_up.svg" alt="Thumbsup" className="ml-2 h-[52px] w-[52px] md:ml-0" />
-                <div className="relative mr-[1250px] mt-[-36px] flex flex-col gap-4 md:mr-0">
-                  <Suspense fallback={<div>Loading feed...</div>}>
-                    {[...Array(3)].map((d, index) => (
-                      <GrayViewContainer key={"listview" + index} className="md:px-5" />
-                    ))}
-                  </Suspense>
                 </div>
               </div>
             </div>
