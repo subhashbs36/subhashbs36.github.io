@@ -16,7 +16,6 @@
     "react-router-hash-link": "^2.4.3",
     "react-scroll": "^1.9.0"
   },
-  "homepage": "https://subhashbs36.github.io",
   "scripts": {
     "start": "vite",
     "build": "vite build",
