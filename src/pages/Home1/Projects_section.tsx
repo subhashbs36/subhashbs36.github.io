@@ -48,13 +48,7 @@ export default function Projects() {
   return (
     <div id="projects">
       <div className="flex items-start justify-between gap-5 md:flex-col">
-        <div className="flex w-[6%] flex-col gap-4 md:w-full md:flex-row sm:flex-col">
-          <Suspense fallback={<div>Loading feed...</div>}>
-            {[...Array(5)].map((_, index) => (
-              <UserProfile key={"listview" + index} className="project-item" />
-            ))}
-          </Suspense>
-        </div>
+
         <div className="container-xs mt-2.5 flex flex-col gap-12 self-center md:px-5">
           <div className="flex items-center justify-center md:flex-col">
             <div className="flex flex-1 items-center gap-4 md:flex-col md:self-stretch">
@@ -94,13 +88,7 @@ export default function Projects() {
             </Suspense>
           </div>
         </div>
-        <div className="mb-40 flex w-[6%] flex-col gap-4 self-end md:w-full md:flex-row md:self-auto sm:flex-col">
-          <Suspense fallback={<div>Loading feed...</div>}>
-            {[...Array(5)].map((_, index) => (
-              <UserProfile2 key={"listview1" + index} className="project-item" />
-            ))}
-          </Suspense>
-        </div>
+
       </div>
     </div>
   );

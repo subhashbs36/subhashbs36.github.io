@@ -6,7 +6,6 @@ import React, { Suspense } from "react";
 export default function Skills() {
   return (
     <div className="flex items-center px-1 md:flex-col" id="skills">
-      <div className="h-[154px] w-[6.55%] border border-solid border-blue_gray-200" />
       <div className="flex flex-1 items-center justify-center gap-[15px] md:flex-col md:self-stretch">
         <div className="container-xs mb-2.5 flex justify-center md:mb-0 md:px-5">
           <div className="flex w-full flex-col gap-3">
@@ -30,12 +29,6 @@ export default function Skills() {
               <div className="h-px w-[54%] bg-purple-200" />
             </div>
             <div className="ml-8 flex items-start md:ml-0 md:flex-col">
-              <div className="mb-7 flex w-[38%] justify-center md:w-full">
-                <div className="mr-7 flex w-full flex-col gap-[42px] md:mr-0">
-                  <ComplexGridLayout className="mr-9 md:mr-0" />
-                  <ComplexGridLayout className="ml-3.5 md:ml-0" />
-                </div>
-              </div>
               <div className="flex flex-1 items-start md:self-stretch sm:flex-col">
                 <div className="flex w-[28%] flex-col gap-1.5 border border-solid border-blue_gray-200 py-2 sm:w-full">
                   <h2 className="flex h-[65px] items-center justify-center border-b border-solid border-blue_gray-200 px-2 text-[16px] font-semibold text-white-a700 bg-transparent">
@@ -185,13 +178,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex w-[6%] flex-col gap-5 self-end md:w-full md:flex-row md:self-auto sm:flex-col">
-          <Suspense fallback={<div>Loading feed...</div>}>
-            {[...Array(5)].map((d, index) => (
-              <UserProfile3 key={"listview" + index} />
-            ))}
-          </Suspense>
         </div>
       </div>
     </div>

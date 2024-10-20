@@ -62,7 +62,6 @@ export default function Publications() {
         </div>
 
         {/* Add margin-right to shift the left elements slightly */}
-        <div className="mt-[130px] h-[154px] w-[6%] border border-solid border-blue_gray-200 md:mt-0 ml-[-7.7%] "  />
       </div>
       <div className="flex-grow" />
     </div>

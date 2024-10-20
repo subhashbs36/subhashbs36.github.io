@@ -96,23 +96,15 @@ export default function Home1Page() {
                         <div className="mr-9 flex w-[42%] items-center gap-2.5 border border-solid border-blue_gray-200 bg-blue_gray-900 p-2 md:mr-0 md:w-full">
                           <div className="h-[16px] w-[16px] border border-solid border-purple-200 bg-purple-200" />
                           <Text as="p" className="text-[16px] font-medium text-blue_gray-200">
-                            <span className="text-blue_gray-200">Looking forward to&nbsp;</span>
-                            <span className="text-white-a700">connecting!</span>
+                            <span className="text-blue_gray-200">Lifelong </span>
+                            <span className="text-purple-200">learner, innovator, </span>
+                            <span className="text-blue_gray-200">and night-time</span>
+                            <span className="text-purple-200"> debugger.</span>
                           </Text>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="absolute left-0 right-0 top-[16%] z-[4] mx-1 my-auto flex flex-1 flex-col md:mx-0">
-                <Img src="images/img_thumbs_up.svg" alt="Thumbsup" className="ml-2 h-[52px] w-[52px] md:ml-0" />
-                <div className="relative mr-[1250px] mt-[-36px] flex flex-col gap-4 md:mr-0">
-                  <Suspense fallback={<div>Loading feed...</div>}>
-                    {[...Array(3)].map((d, index) => (
-                      <GrayViewContainer key={"listview" + index} className="md:px-5" />
-                    ))}
-                  </Suspense>
                 </div>
               </div>
             </div>
