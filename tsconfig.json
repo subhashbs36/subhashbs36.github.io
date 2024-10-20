@@ -15,5 +15,5 @@
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true
   },
-  "include": ["src"]
+  "include": ["src", "public"]
 }
