@@ -15,7 +15,7 @@ const data = [
     subtitle: "Violence Detection Using Surveillance Cameras",
     Github: "https://github.com/subhashbs36/Nayan_Nirikshan",   
     Live: "Live >=",
-    imageSrc: "public/gifs/fight.gif", // Add custom image source here
+    imageSrc: "gifs/fight.gif", // Add custom image source here
     liveTitle: "Feature Coming soon", // Add title for Live button
   },
   {
@@ -27,7 +27,7 @@ const data = [
     subtitle: "Real-time corrections and guidance for yoga poses",
     Github: "https://github.com/subhashbs36/Yoga-AI-Assistant",
     Live: "Live >=",
-    imageSrc: "public/gifs/yogaAi.gif", // Add custom image source here
+    imageSrc: "gifs/yogaAi.gif", // Add custom image source here
     liveTitle: "Feature coming soon", // Add title for Live button
   },
   {
@@ -39,7 +39,7 @@ const data = [
     subtitle: "Autonomous Drone Path Optimization for Pomegranate Tree Pesticide Spraying",
     Github: "https://github.com/subhashbs36/Autonomous-Drone-Path-Optimization-for-Pomegranate-Tree-Pesticide-Spraying",
     Live: "Live >=",
-    imageSrc: "public/gifs/drone_path.gif", // Add custom image source here
+    imageSrc: "gifs/drone_path.gif", // Add custom image source here
     liveTitle: "Feature coming soon", // Add title for Live button
   },
 ];
