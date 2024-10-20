@@ -45,22 +45,44 @@ export default function Footer({ ...props }: Props) {
                 </div>
             </div>
           </div>
-          <div className="flex justify-center items-center gap-1">
-            <Text as="p" className="text-[16px] font-normal text-blue_gray-200">
-              Thank you&nbsp;
-            </Text>
-            <a
-              href="https://www.linkedin.com/in/b-s-vivek/"
-              target="_blank"
-              rel="noreferrer"
-              className="cursor-pointer text-[16px] font-normal text-purple-200 hover:font-semibold"
-            >
-              VIVEK B S
-            </a>
-            <Text as="p" className="text-[16px] font-normal text-blue_gray-200">
-              &nbsp;for helping me in making this website.
-            </Text>
-          </div>
+        </div>
+        <br />
+        <div className="flex justify-center items-center gap-1">
+          <Text as="p" className="text-[16px] font-normal text-blue_gray-200">
+            Special thanks to&nbsp;
+          </Text>
+          <a
+            href="https://www.linkedin.com/in/b-s-vivek/"
+            target="_blank"
+            rel="noreferrer"
+            className="cursor-pointer text-[16px] font-normal text-purple-200 hover:font-semibold"
+          >
+            Vivek B S
+          </a>
+          <Text as="p" className="text-[16px] font-normal text-blue_gray-200">
+            &nbsp;for his invaluable support in bringing this website to life. 
+          </Text>
+        </div>
+        <div className="flex justify-center items-center gap-1 mt-1">
+          <Text as="p" className="text-[16px] font-normal text-blue_gray-200">
+            Connect with him on&nbsp;
+          </Text>
+          <a
+            href="https://www.linkedin.com/in/b-s-vivek/"
+            target="_blank"
+            rel="noreferrer"
+            className="cursor-pointer text-[16px] font-normal text-purple-200 hover:font-semibold"
+          >
+            LinkedIn
+          </a>
+          <Text as="p" className="text-[16px] font-normal text-blue_gray-200">
+            &nbsp;to explore more of his amazing work!
+          </Text>
+        </div>
+        <div className="flex justify-center items-center gap-1 mt-4">
+          <Text as="p" className="text-[14px] font-normal text-blue_gray-200">
+            © {new Date().getFullYear()} SubhashBS. All rights reserved.
+          </Text>
         </div>
       </div>
     </footer>

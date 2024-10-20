@@ -20,7 +20,7 @@ export default function Contacts() {
                 as="h5"
                 className="text-[32px] font-bold text-white-a700 md:text-[30px] sm:text-[28px]"
               >
-                contacts
+                Contacts
               </Heading>
             </div>
             <div className="h-px w-[50%] bg-purple-200" />
@@ -31,7 +31,7 @@ export default function Contacts() {
             I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to
             contact me
             </Text>
-          <div className="flex w-[24%] flex-col items-start gap-3 self-center border border-solid border-blue_gray-200 p-4 md:w-full">
+          <div className="flex w-[30%] flex-col items-start gap-3 self-center border border-solid border-blue_gray-200 p-4 md:w-full">
             <Heading as="h6" className="text-[16px] font-semibold text-white-a700">
               Message me here
             </Heading>

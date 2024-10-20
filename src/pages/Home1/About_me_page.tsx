@@ -16,7 +16,7 @@ export default function About_me() {
     <div className="flex items-center px-7 md:flex-col sm:px-5" id="about_me">
       <div className="flex-1 md:self-stretch">
         <div className="flex flex-col gap-[22px]">
-          <div className="ml-[152px] mr-[100px] flex items-center justify-between gap-5 md:mx-0 sm:flex-col">
+          <div className="ml-[100px] mr-[100px] flex items-center justify-between gap-5 md:mx-0 sm:flex-col">
             <div className="flex flex-wrap">
               <Heading
                 size="headinglg"
@@ -30,7 +30,7 @@ export default function About_me() {
                 as="h3"
                 className="text-[32px] font-bold text-white-a700 md:text-[30px] sm:text-[28px]"
               >
-                about-me
+                About-me
               </Heading>
             </div>
             <div className="h-px flex-1 bg-purple-200 sm:self-stretch" />

@@ -15,6 +15,7 @@ export default function Header({ ...props }: Props) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   const easterEgg = () => {
     const element = document.getElementById('easter-egg');
     if (element) {
@@ -27,17 +28,22 @@ export default function Header({ ...props }: Props) {
   };
 
   return (
-    <header {...props} className={`${props.className} flex flex-col self-stretch gap-1`}>
-      <div className="flex w-full justify-end self-end px-4 sm:px-2 ">
-        <div className="flex w-full items-end justify-between gap-5 bg-blue_gray-900 py-2 flex-wrap">
-          <a href="#" target="_blank" rel="noreferrer">
-            <Img src="images/img_header_logo.png" alt="Headerlogo" className="mt-6 h-[20px] w-[92px] object-contain" />
-          </a>
-          <div className="relative h-[20px] w-[38%] sm:w-full  sm:px-5">
-            <ul className="absolute bottom-0 right-[-10px] top-0 !my-auto !ml-10 flex items-center gap-4 md:ml-0 sm:relative sm:flex-col sm:items-start">
+    <header {...props} className={`${props.className} flex flex-col self-stretch`}>
+      <div className="flex w-full justify-end px-6 sm:px-2">
+        <div className="flex w-full items-center justify-between gap-5 bg-blue_gray-900 py-4 sm:flex-col sm:gap-3 sm:py-2">
+            <a href="#" target="_blank" rel="noreferrer" className="pl-4">
+            <Img
+              src="images/img_header_logo.png"
+              alt="Headerlogo"
+              className="h-[20px] w-[92px] object-contain sm:h-[16px] sm:w-[72px]"
+            />
+            </a>
+          {/* Menu */}
+          <div className="relative flex-1 sm:w-full">
+            <ul className="flex justify-end items-center gap-6 sm:flex-row sm:items-start sm:gap-4">
               <li>
                 <a onClick={() => handleScroll('home')}>
-                  <div className="flex items-center gap-1" id="home">
+                  <div className="flex items-center gap-1">
                     <Text as="p" className="cursor-pointer text-[16px] font-normal text-purple-200 hover:font-semibold">
                       #
                     </Text>
@@ -80,15 +86,6 @@ export default function Header({ ...props }: Props) {
                     <Text as="p" className="cursor-pointer text-[16px] font-normal text-blue_gray-200 hover:font-semibold hover:text-purple-200">
                       contacts
                     </Text>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a onClick={easterEgg}>
-                  <div className="flex items-center gap-1" id="easter-egg">
-                  <Heading as="h6" className="cursor-pointer text-[16px] font-semibold text-blue_gray-200 hover:text-purple-200">
-                    EN
-                  </Heading>
                   </div>
                 </a>
               </li>

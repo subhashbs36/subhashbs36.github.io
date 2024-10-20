@@ -23,7 +23,7 @@ export default function Skills() {
                   as="h2"
                   className="text-[32px] font-bold text-white-a700 md:text-[30px] sm:text-[28px]"
                 >
-                  skills
+                  Skills
                 </Heading>
               </div>
               <div className="h-px w-[54%] bg-purple-200" />
