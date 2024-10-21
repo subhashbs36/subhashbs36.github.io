@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Img, Text, Button, Heading } from "../../components";
 import Footer from "../../components/Footer/Footer";
-import GrayViewContainer from "../../components/GrayViewContainer";
+// import GrayViewContainer from "../../components/GrayViewContainer";
 import Header from "../../components/Header";
 import Contacts from "./Contact_section";
 import Projects from "./Projects_section";
