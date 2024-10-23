@@ -1,7 +1,9 @@
 {
-  "name": "home-5",
+  "name": "subhash_portfolio",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js", 
+  "homepage": "./",
   "dependencies": {
     "@tailwindcss/forms": "^0.5.7",
     "@testing-library/jest-dom": "^5.15.1",
